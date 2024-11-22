@@ -1,0 +1,106 @@
+/* Container for the LandOfficer component */
+.land-officer {
+    background: url('Images/landofficerpage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Inner content box */
+  .land-officer-container {
+    background-color: rgba(0, 50, 0, 0.85); /* Dark green with opacity */
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 50px; /* Add spacing from the left side */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #90EE90; /* Light green for labels */
+  }
+  
+  form input[type="text"],
+  form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #32CD32; /* Lime green */
+    border-radius: 5px;
+    background-color: #f0fff0; /* Light greenish-white */
+    color: #004d00; /* Dark green text */
+  }
+  
+  form input[type="checkbox"] {
+    margin-left: 5px;
+  }
+  
+  form button {
+    background-color: #006400; /* Dark green */
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #228B22; /* Forest green */
+  }
+  
+  /* Navigation buttons */
+  .land-officer-container > div button {
+    background-color: #228B22; /* Forest green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .land-officer-container > div button:hover {
+    background-color: #006400; /* Darker green */
+  }
+  
+  /* Page heading */
+  .land-officer-container h2 {
+    font-size: 24px;
+    color: #32CD32; /* Lime green */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .land-officer-container {
+      margin-left: 10px; /* Adjust margin for small screens */
+      padding: 20px;
+    }
+  
+    form button,
+    .land-officer-container > div button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
